@@ -1,0 +1,26 @@
+@use 'mixins';
+@use 'variables';
+
+.montserrat-regular {
+    @include mixins.font-style(variables.$main-font, 500);
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+  
+.montserrat-bold {
+    @include mixins.font-style(variables.$main-font, 700);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.fraunces-bold {
+    @include mixins.font-style(variables.$secondary-font, 700);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+}
